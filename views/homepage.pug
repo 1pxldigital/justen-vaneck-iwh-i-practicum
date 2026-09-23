@@ -1,0 +1,21 @@
+doctype html 
+html 
+    head 
+    title= title 
+    link(rel="stylesheet" href="/css/style.css")
+body 
+h1 Vessels 
+p 
+    a(href="/update-cobj") Add a vessel 
+table 
+    thead 
+        tr 
+            th Name 
+            th Length (ft)
+            th Mooring 
+        tbody 
+            each r in records 
+                tr 
+                    td= r.properties.name 
+                    td= r.properties.length_ft 
+                    td= r.properties.mooring
