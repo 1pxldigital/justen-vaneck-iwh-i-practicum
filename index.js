@@ -24,7 +24,7 @@ app.get('/', async (req, res) => {
     try {
         const resp = await axios.get(url, { headers });
         const records = resp.data.results;
-        res.render('homepage', { title: 'All Vessels | HS IWH I Justen van Eck', records });
+        res.render('homepage', { title: 'All Vessels | Integrating With HubSpot I Practicum', records });
     } catch (error) {
         console.error(error.response ? error.response.data : error.message);
         res.status(500).send('Oops! Error fetching data from HubSpot')
@@ -34,7 +34,7 @@ app.get('/', async (req, res) => {
 // TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
 
 app.get('/update-cobj', (req, res) => {
-res.render('updates', {title: 'Update Custom Object Form | Integrating with HubSpot I Practicum'});
+res.render('updates', {title: 'Update Custom Object Form | Integrating With HubSpot I Practicum'});
 });
 
 // TODO: ROUTE 3 - Create a new app.post route for the custom objects form to create or update your custom object data. Once executed, redirect the user to the homepage.
