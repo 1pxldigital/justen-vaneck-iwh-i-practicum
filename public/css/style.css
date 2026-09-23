@@ -10,6 +10,13 @@ h1 {
     margin: 1rem;
 }
 
+th {
+    background-color: black;
+    color:azure;
+    font-weight:400;
+    padding: 10px;
+}
+
 .cards {
     display: flex;
     align-items: center;
