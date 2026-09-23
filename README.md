@@ -15,7 +15,7 @@ Small Express app for the Integrating with HubSpot I: Foundations practicum.
 - 'POST /update-cobj' create the new record in HubSpot and redirect back home
 
 ## To run this locally:
-1. RUn `npm install`
+1. Run `npm install`
 2. Create `.env` with `PRIVATE_APP_ACCESS=<private app token>` and `CUSTOM_OBJECT_TYPE=<object id>`
 3. Run `node index.js` → http://localhost:3030 (port can be changed in the index.js file)
 
