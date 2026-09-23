@@ -7,6 +7,19 @@ To read the full directions, please go to the [practicum instructions](https://a
 **HubSpot developer test account: Vessel custom object list view:**
 https://app-eu1.hubspot.com/contacts/149396932/objects/2-253796869/views/all/list
 
+
+## Justen van Eck: What this does
+Small Express app for the Integrating with HubSpot I: Foundations practicum.
+- 'GET /' lists Vessel (custom HubSpot Object) records via the CRM v3 Objects API
+- 'GET /update-cobj' is the form to add a new vessel
+- 'POST /update-cobj' create the new record in HubSpot and redirect back home
+
+## To run this locally:
+1. RUn `npm install`
+2. Create `.env` with `PRIVATE_APP_ACCESS=<private app token>` and `CUSTOM_OBJECT_TYPE=<object id>`
+3. Run `node index.js` → http://localhost:3030 (port can be changed in the index.js file)
+
+
 ___
 ## Tips:
 - Commit to your repository often. Even if you make small tweaks to your code, it’s best to be committing to your repository frequently.
