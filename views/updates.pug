@@ -1,0 +1,17 @@
+doctype html 
+html
+  head
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    h1 Add a new vessel
+    form(method="POST" action="/update-cobj")
+      label(for="name") Name
+      input#name(type="text" name="name" required)
+      label(for="length_ft") Length (ft)
+      input#length_ft(type="number" name="length_ft" min="0" step="0.1")
+      label(for="mooring") Mooring
+      input#mooring(type="text" name="mooring")
+      button(type="submit") Create vessel
+    p
+      a.btn(href="/") Back to vessels
